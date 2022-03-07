@@ -8,7 +8,7 @@ class UserMiddleware {
     const { username, password } = ctx.request.body;
     if(!username || !password) {
       const error = new Error(errorTypes.NAME_OR_PASSWORD_IS_WRONG);
-      ctx.app.emit('error', error, ctx);
+      return ctx.app.emit('error', error, ctx);
     } else {
       await next();
     }
@@ -19,7 +19,7 @@ class UserMiddleware {
     const hasName = await service.whetherRepeat(username);
     if(hasName) {
       const error = new Error(errorTypes.USERNAME_HAS_ALREADY_EXISTS);
-      ctx.app.emit('error', error, ctx);
+      return ctx.app.emit('error', error, ctx);
     } else {
       await next();
     }
@@ -34,16 +34,17 @@ class UserMiddleware {
   
   async verifyLogin(ctx, next) { // 登录验证
     const { username, password } = ctx.request.body;
+    console.log(!username);
     // 是否有空值
     if(!username || !password) {
       const error = new Error(errorTypes.NAME_OR_PASSWORD_IS_WRONG);
-      ctx.app.emit('error', error, ctx);
+      return ctx.app.emit('error', error, ctx);
     }
     // 查看是否存在该用户
     const user = await service.userExists(username);
     if(user === undefined) {
       const error = new Error(errorTypes.USER_IS_NOT_EXISTS);
-      ctx.app.emit('error', error, ctx);
+      return ctx.app.emit('error', error, ctx);
     } else {
       // 校验密码
       const dataPassword = user.password;
@@ -53,7 +54,7 @@ class UserMiddleware {
         await next();
       } else {
         const error = new Error(errorTypes.PASSWORD_IS_ERROR);
-        ctx.app.emit('error', error, ctx);
+        return ctx.app.emit('error', error, ctx);
       }
     }
   }

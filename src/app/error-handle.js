@@ -19,6 +19,10 @@ const errorHandle = function(error, ctx) {
       ctx.status = 400;
       ctx.response.body = { status : 400 ,errMessage: '密码错误' };
       break;
+    case errorTypes.TOKEN_IS_EXPIRED:
+      ctx.status = 401;
+      ctx.response.body = { status : 401 ,errMessage: '无效token或token已过期，请重新登录' };
+      break;
   }
 }
 

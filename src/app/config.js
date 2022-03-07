@@ -6,6 +6,8 @@ const MYSQL_PORT = 3306
 const MYSQL_DATABASE = 'graduateappletdatabase'
 const MYSQL_USER = 'root'
 const MYSQL_PASSWORD = 'Zhujinfa0925'
+// 网易云数据接口地址
+const DATA_BASE_URL = 'https://netease-cloud-music-api-7x52hqjnr-jinfazhu-mygit.vercel.app';
 
 const fs = require('fs');
 const path = require('path');
@@ -20,7 +22,8 @@ module.exports = {
   MYSQL_PORT,
   MYSQL_DATABASE,
   MYSQL_USER,
-  MYSQL_PASSWORD
+  MYSQL_PASSWORD,
+  DATA_BASE_URL
 }
 
 module.exports.PRIVATE_KEY = PRIVATE_KEY;

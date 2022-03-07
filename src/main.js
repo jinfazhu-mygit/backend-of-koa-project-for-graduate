@@ -1,4 +1,4 @@
-const router = require('./router/index'); // 路由
+const useRoutes = require('./router/index'); // 路由
 const config = require('./app/config');
 const errorHandle = require('./app/error-handle');
 require('./app/database'); // 连接数据库
@@ -10,8 +10,8 @@ const app = new Koa();
 
 app.use(bodyParser());
 // 注册
-app.use(router.routes());
-app.use(router.allowedMethods()); // 除定义过的方法外，返回不支持的提示
+app.useRoutes = useRoutes;
+app.useRoutes();
 
 app.on('error', errorHandle);
 
