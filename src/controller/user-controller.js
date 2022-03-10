@@ -25,6 +25,11 @@ class UserControll {
     ctx.response.body = { id, username, token, status: 200 };
   }
 
+  async returnState(ctx, next) {
+    console.log(ctx.user);
+    ctx.response.body = { status: 200, id: ctx.user.id, username: ctx.user.username };
+  }
+
   async returnSingerInfo(ctx, next) {
     const { id, singername } = ctx.request.body;
     ctx.body = "这里返回的是歌手信息";

@@ -1,6 +1,8 @@
 // 控制器
-const { create,
+const { 
+  create,
   login,
+  returnState
    } = require('../controller/user-controller');
 // 中间件
 const { 
@@ -20,5 +22,7 @@ const router = new Router();
 router.post('/register', hasNull, repeatName, cryptoPassword, create);
 // 登录
 router.post('/login', verifyLogin, login);
+// 状态校验
+router.post('/verify', verifyAuth, returnState);
 
 module.exports = router;
