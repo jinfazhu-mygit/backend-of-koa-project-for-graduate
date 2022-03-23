@@ -3,8 +3,8 @@ const mysqlConnections = require('../app/database');
 class UserService {
   // 判断用户名是否重复
   async whetherRepeat(username) {
-    const statement = 'SELECT * FROM `users` WHERE username = ?';
-    const [ result ] = await mysqlConnections.execute(statement, [username]);
+    const statement = 'SELECT * FROM `users` WHERE username = ?'; // 预处理语句
+    const [ result ] = await mysqlConnections.execute(statement, [username]); //执行
     if(result.length) {
       return true; // 重复
     } else {

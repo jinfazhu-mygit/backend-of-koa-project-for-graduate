@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const { PRIVATE_KEY } = require('../app/config');
 
 class UserControll {
-  async create(ctx, next){
+  async create(ctx, next){ // 创建用户
     const { username, password } = ctx.request.body;
     // console.log(password);
     if( !username || !password ) {
@@ -18,10 +18,10 @@ class UserControll {
   async login(ctx, next) {
     const { id, username } = ctx.user;
     const token = jwt.sign( { id, username }, PRIVATE_KEY, { // 私钥颁发token
-      expiresIn: 60 * 60 * 24, // 设置一天的过期时间,
-      algorithm: 'RS256' // 加密方式
+      expiresIn: 60 * 60 * 24, // 设置token为一天的过期时间,
+      algorithm: 'RS256' // RS256加密方式
     })
-
+    // 返回token及id,username
     ctx.response.body = { id, username, token, status: 200 };
   }
 

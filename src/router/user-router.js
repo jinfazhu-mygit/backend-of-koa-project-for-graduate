@@ -18,11 +18,11 @@ verifyAuth
 const Router = require('koa-router');
 
 const router = new Router();
-// 注册
+// 注册，使用/register作为路径名，定义为post请求
 router.post('/register', hasNull, repeatName, cryptoPassword, create);
-// 登录
+// 登录，使用/login作为路径名，定义为post请求
 router.post('/login', verifyLogin, login);
-// 状态校验
+// 状态校验，使用/verify作为路径名，定义为post请求
 router.post('/verify', verifyAuth, returnState);
 
 module.exports = router;
