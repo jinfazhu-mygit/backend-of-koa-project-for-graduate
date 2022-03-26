@@ -9,7 +9,7 @@ const getBanners = async function() {
 }
 
 const getHotSongs = async function(limit, offset) {
-  const statement = 'SELECT * FROM `hot-song` LIMIT ? OFFSET ?;'
+  const statement = 'SELECT * FROM `hot-song` ORDER BY `order` LIMIT ? OFFSET ?;'
   const res = await connections.execute(statement, [limit, offset]);
   return res[0];
 }
