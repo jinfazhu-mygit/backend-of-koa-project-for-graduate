@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="AiwAsSDO8qTlu6pAE6Zz" name="第 1 页">
-        <mxGraphModel dx="804" dy="427" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="786" dy="443" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="4" value="EaseMusic" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="350" y="220" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="363" y="219" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="用户模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="200" y="330" width="120" height="60" as="geometry"/>
@@ -13,31 +13,32 @@
                 <mxCell id="26" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#000000;" parent="1" source="6" target="25" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="410" y="410"/>
+                            <mxPoint x="415" y="410"/>
                             <mxPoint x="375" y="410"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="6" value="视频mv模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="350" y="330" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="360" y="330" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="音乐播放模块" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="510" y="330" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="520" y="330" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;" parent="1" target="5" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="410" y="280" as="sourcePoint"/>
+                        <mxPoint x="422" y="280" as="sourcePoint"/>
                         <mxPoint x="440" y="370" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="410" y="300"/>
+                            <mxPoint x="422" y="300"/>
                             <mxPoint x="260" y="300"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="9" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="6" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="410" y="290" as="sourcePoint"/>
+                        <mxPoint x="423" y="280" as="sourcePoint"/>
                         <mxPoint x="440" y="370" as="targetPoint"/>
+                        <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="10" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="4" target="7" edge="1">
@@ -45,8 +46,8 @@
                         <mxPoint x="410" y="300" as="sourcePoint"/>
                         <mxPoint x="440" y="370" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="410" y="300"/>
-                            <mxPoint x="570" y="300"/>
+                            <mxPoint x="423" y="300"/>
+                            <mxPoint x="580" y="300"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -104,66 +105,61 @@
                 <mxCell id="27" value="视频mv播放" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="395" y="430" width="30" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="27" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="410" y="390" as="sourcePoint"/>
-                        <mxPoint x="430" y="390" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="29" value="视频推荐" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="430" y="430" width="30" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="30" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="29" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="410" y="390" as="sourcePoint"/>
+                        <mxPoint x="416" y="391" as="sourcePoint"/>
                         <mxPoint x="430" y="380" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="410" y="410"/>
+                            <mxPoint x="416" y="410"/>
                             <mxPoint x="445" y="410"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="31" value="歌曲推荐" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="480" y="430" width="30" height="130" as="geometry"/>
+                    <mxGeometry x="478" y="430" width="30" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="32" value="歌曲分类" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="430" width="30" height="130" as="geometry"/>
+                    <mxGeometry x="516" y="430" width="30" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="33" value="歌曲搜索" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="560" y="430" width="30" height="130" as="geometry"/>
+                    <mxGeometry x="554" y="430" width="30" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="歌曲播放" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="640" y="430" width="30" height="130" as="geometry"/>
+                <mxCell id="34" value="歌曲收藏" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="629" y="430" width="30" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="36" value="歌曲列表" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" parent="1" vertex="1">
-                    <mxGeometry x="600" y="430" width="30" height="130" as="geometry"/>
+                    <mxGeometry x="591" y="430" width="30" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7" target="33" edge="1">
+                <mxCell id="38" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7" target="33" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="380" y="430" as="sourcePoint"/>
                         <mxPoint x="570" y="428" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="570" y="410"/>
-                            <mxPoint x="570" y="420"/>
+                            <mxPoint x="580" y="410"/>
+                            <mxPoint x="569" y="410"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="39" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="32" edge="1">
+                <mxCell id="39" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" target="32" edge="1" source="7">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="570" y="390" as="sourcePoint"/>
                         <mxPoint x="430" y="380" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="570" y="410"/>
-                            <mxPoint x="535" y="410"/>
+                            <mxPoint x="580" y="410"/>
+                            <mxPoint x="531" y="410"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="40" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="31" edge="1">
+                <mxCell id="40" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" target="31" edge="1" source="7">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="570" y="390" as="sourcePoint"/>
                         <mxPoint x="430" y="380" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="570" y="410"/>
+                            <mxPoint x="580" y="410"/>
+                            <mxPoint x="532" y="410"/>
                             <mxPoint x="495" y="410"/>
                         </Array>
                     </mxGeometry>
@@ -173,23 +169,43 @@
                         <mxPoint x="380" y="430" as="sourcePoint"/>
                         <mxPoint x="430" y="380" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="570" y="410"/>
-                            <mxPoint x="615" y="410"/>
+                            <mxPoint x="580" y="410"/>
+                            <mxPoint x="606" y="410"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="42" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="34" edge="1">
+                <mxCell id="42" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" target="34" edge="1" source="7">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="570" y="390" as="sourcePoint"/>
                         <mxPoint x="430" y="380" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="570" y="410"/>
-                            <mxPoint x="655" y="410"/>
+                            <mxPoint x="580" y="410"/>
+                            <mxPoint x="645" y="410"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="43" value="系统功能模块图" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1">
-                    <mxGeometry x="354" y="569" width="120" height="22" as="geometry"/>
+                <mxCell id="43" value="系统功能模块图" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="363" y="569" width="120" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="歌曲播放" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="666" y="430" width="30" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="endArrow=classic;html=1;fontColor=#000000;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="587" y="410" as="sourcePoint"/>
+                        <mxPoint x="681" y="430" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="617" y="410"/>
+                            <mxPoint x="682" y="410"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="410" y="410" as="sourcePoint"/>
+                        <mxPoint x="410" y="430" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
