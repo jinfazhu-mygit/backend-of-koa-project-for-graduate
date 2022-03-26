@@ -4,12 +4,12 @@ const { PRIVATE_KEY } = require('../app/config');
 
 class UserControll {
   async create(ctx, next){ // 创建用户
-    const { username, password } = ctx.request.body;
+    const { username, password, gender } = ctx.request.body;
     // console.log(password);
     if( !username || !password ) {
       ctx.response.body = { errMessage: NAME_OR_PASSWORD_IS_WRONG, status: 400 };
     } else { // 数据库中添加用户
-      const result = await service.addUser(username, password);
+      const result = await service.addUser(username, password, gender);
       console.log(result.affectedRows);
       ctx.response.body = { status: 200, message: `注册成功，userId为${result.insertId}` };
     }

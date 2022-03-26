@@ -12,9 +12,9 @@ class UserService {
     }
   }
   // 添加用户
-  async addUser(username, password) {
-    const statement = 'INSERT INTO `users` (username, password) VALUES (?, ?);';
-    const [ result ] = await mysqlConnections.execute(statement, [username, password])
+  async addUser(username, password, gender) {
+    const statement = 'INSERT INTO `users` (username, password, gender) VALUES (?, ?, ?);';
+    const [ result ] = await mysqlConnections.execute(statement, [username, password, gender])
     console.log(result);
     return result;
   }
