@@ -11,7 +11,7 @@ const app = new Koa();
 app.use(bodyParser());
 // 注册
 app.useRoutes = useRoutes;
-app.useRoutes();
+app.useRoutes(); 
 
 app.on('error', errorHandle);
 
